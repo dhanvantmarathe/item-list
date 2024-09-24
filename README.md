@@ -1,4 +1,4 @@
-# Myproject
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
@@ -22,6 +22,23 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Item List Application
+
+## Overview
+This project is a simple Angular application that fetches a list of items from a public API, with sorting and filtering functionality. The project uses Angular Material for styling.
+
+## Features
+- Display a list of items from a public API (Fake Store API).
+- Sort items by price (ascending and descending).
+- Filter items by name or description.
+- Responsive design with Angular Material.
+
+## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dhanvantmarathe/item-list.git
+   cd item-list
+
+
+

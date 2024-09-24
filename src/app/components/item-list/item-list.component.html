@@ -1,0 +1,26 @@
+<div class="container">
+    <mat-form-field appearance="fill">
+      <mat-label>Search Items</mat-label>
+      <input matInput [(ngModel)]="searchQuery" (input)="filterItems()">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Sort by Price</mat-label>
+      <mat-select [(ngModel)]="sortCriteria" (selectionChange)="sortItems()">
+        <mat-option value="asc">Ascending</mat-option>
+        <mat-option value="desc">Descending</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <div class="item-list">
+      <mat-card *ngFor="let item of filteredItems">
+        <img mat-card-image [src]="item.image" alt="{{ item.title }}">
+        <mat-card-title style="padding-top: 5px;">{{ item.title }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ item.description }}</p>
+          <p style="padding-top: 5px;"><strong>Price:</strong> ${{ item.price }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
